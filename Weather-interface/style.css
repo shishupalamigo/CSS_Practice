@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Eric Mayers's Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Eric Mayer's reset Ends here */
+
+
+body {
+    background-color: #efefef99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: sans-serif;
+  }
+  .container {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 600px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px #ababab;
+      background: linear-gradient(#02b4fa7c, #7bf7d8);
+  }
+  .city {
+      margin-top: 50px;
+      margin-bottom: 0px;
+      color: #ffffeedd;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 3em;
+  }
+  .temp {
+      margin: 0;
+      padding: 0;
+      color: #ffffffdd;
+      font-weight: 700;
+      font-size: 4em;
+  }
+  .summary {
+      color: #4abbf0ce;
+      font-weight: 900;
+      font-size: 1.2em;
+      margin-top: 10px;
+  }
+
+  /* MOUNTAINS */
+
+  .mountain1 {
+      position: absolute;
+      bottom: -100px;
+      right: -240px;
+      z-index: 4;
+      flex-shrink: 0;
+      background-color: #1a775dee;
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+  }
+  .mountain2 {
+      background-color: #1e896bcc;
+      height: 400px;
+      width: 400px;
+      border-radius: 20%;
+      position: absolute;
+      bottom: -220px;
+      left: -220px;
+      z-index: 3;
+      flex-shrink: 0;
+  }
+  .mountain3 {
+    background-color: #1a775d66;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -80px;
+    left: -180px;
+    z-index: 2;
+    flex-shrink: 0;
+  }
+  .mountain4 {
+    background-color: #1a775d33;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    left: -280px;
+    z-index: 1;
+    flex-shrink: 0;
+  }
+ .bottom {
+     background-color: #fff;
+     height: 350px;
+     width: 350px;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     z-index: 5;
+     margin-top: 240px;
+     flex-shrink: 0;
+     box-shadow: 0 0 10px #fff;
+ }
+
+ /* CLOUDS */
+
+ .cloud {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: flex-end;
+     margin-top: 30px;
+ }
+ .wcloud {
+     z-index: 3;
+     position: absolute;
+     top: 250px;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: flex-end;
+     animation: cloudmove 5s linear infinite;
+ }
+.wcloud2 {
+    z-index: 6;
+    position: absolute;
+    top: 300px;
+    transform: scale(0.7); 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    animation: cloudmove 5s 2s linear infinite;
+}
+
+@keyframes cloudmove {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 300px;
+    }
+}
+.cloud1 {
+    height: 30px;
+    width: 30px;
+    background-color: #53e2bc;
+    border-radius: 50%;
+    margin-right: -20px;
+    box-shadow: 0px 0px 5px #53e2bc;
+  }
+  
+  .cloud2 {
+    height: 70px;
+    width: 70px;
+    background-color: #53e2bc;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #53e2bc;
+  }
+  .cloud3 {
+    height: 50px;
+    width: 50px;
+    background-color: #53e2bc;
+    border-radius: 50%;
+    margin-left: -20px;
+    box-shadow: 0px 0px 5px #53e2bc;
+  }
+
+  
+  
+  
